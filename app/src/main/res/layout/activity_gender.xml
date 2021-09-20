@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GenderActivity"
+    android:background="@color/teal_700">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/basil"
+        android:minHeight="?attr/actionBarSize"
+        app:titleMarginStart="120dp"
+        app:title="MUSCLE MONSTERS"
+        app:titleTextColor="@color/black"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        />
+
+    <TextView
+        android:id="@+id/hi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hi"
+        android:textSize="40sp"
+        android:textAlignment="center"
+        android:layout_marginTop="100dp"
+        />
+
+    <TextView
+        android:id="@+id/gender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:text="@string/select_gender"
+        android:textAlignment="center"
+        android:textSize="40sp" />
+
+    <ImageView
+        android:id="@+id/male"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/gender"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="50dp"
+        android:src="@drawable/male"
+        android:background="@color/white"
+
+        />
+
+
+    <ImageView
+        android:id="@+id/female"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/gender"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/female"
+        android:background="@color/white"
+        android:layout_toRightOf="@+id/male" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/male">
+
+        <RadioButton
+            android:id="@+id/selectMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/male"
+            android:textSize="20sp"
+            android:layout_marginStart="50dp"
+            android:buttonTint="@color/white"
+            android:onClick="gender"/>
+        <RadioButton
+            android:id="@+id/selectFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/female"
+            android:textSize="20sp"
+            android:layout_marginLeft="120dp"
+            android:buttonTint="@color/white"
+            android:onClick="gender"/>
+
+    </RadioGroup>
+
+
+
+
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="600dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/next"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/white"
+        android:onClick="btnNext"/>
+
+
+
+</RelativeLayout>

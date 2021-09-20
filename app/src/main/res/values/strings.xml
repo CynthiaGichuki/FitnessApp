@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">Project</string>
+    <string name="next">NEXT</string>
+    <string name="female">FEMALE</string>
+    <string name="male">MALE</string>
+    <string name="select_gender">SELECT GENDER:</string>
+    <string name="hi">HI</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="beginner_workouts">BEGINNER WORKOUTS</string>
+    <string name="select_day">Select Day</string>
+
+    <string name="tab_label_1">Beginner</string>
+    <string name="tab_label_2">Intermediate</string>
+    <string name="tab_label_3">Advanced</string>
 </resources>
