@@ -15,7 +15,8 @@
         android:background="@color/basil"
         android:minHeight="?attr/actionBarSize"
         app:titleMarginStart="120dp"
-        app:title="MUSCLE MONSTERS"
+        app:title="DYNAMO FITNESS"
+        app:titleTextAppearance="@style/app_title"
         app:titleTextColor="@color/black"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
@@ -45,10 +46,10 @@
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_below="@+id/gender"
-        android:layout_marginTop="20dp"
         android:layout_marginStart="50dp"
-        android:src="@drawable/male"
+        android:layout_marginTop="20dp"
         android:background="@color/white"
+        android:src="@drawable/male"
 
         />
 

@@ -11,13 +11,14 @@
         android:layout_width="400dp"
         android:layout_height="400dp"
         android:layout_centerInParent="true"
-        android:src="@drawable/fitness">
+        android:src="@drawable/fitness3">
 
     </ImageView>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="MUSCLE MONSTERS"
+        android:text="DYNAMO FITNESS"
+        android:textAppearance="@style/app_title"
         android:textColor="@color/black"
         android:textSize="40sp"
         android:layout_alignParentBottom="true"
