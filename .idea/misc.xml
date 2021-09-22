@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Allan/Documents/STRATHMORE/3 YEAR/SEM 1/MAD/FitnessApp/app/src/main/res/layout/activity_login.xml" value="0.23645833333333333" />
+        <entry key="..\:/Users/Allan/Documents/STRATHMORE/3 YEAR/SEM 1/MAD/FitnessApp/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/Users/Allan/Documents/STRATHMORE/3 YEAR/SEM 1/MAD/FitnessApp/app/src/main/res/layout/activity_register.xml" value="0.264" />
         <entry key="..\:/Users/Allan/Documents/STRATHMORE/3 YEAR/SEM 1/MAD/FitnessApp/app/src/main/res/layout/fragment_advanced.xml" value="0.23645833333333333" />
         <entry key="..\:/Users/Allan/Documents/STRATHMORE/3 YEAR/SEM 1/MAD/FitnessApp/app/src/main/res/layout/fragment_beginner.xml" value="0.23645833333333333" />
@@ -11,10 +12,9 @@
         <entry key="..\:/Users/Lenovo/AndroidStudioProjects/Project/app/src/main/res/layout/activity_exercise.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Lenovo/AndroidStudioProjects/Project/app/src/main/res/layout/activity_gender.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Lenovo/AndroidStudioProjects/Project/app/src/main/res/layout/activity_main.xml" value="0.2" />
-        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/Project/app/src/main/res/layout/activity_meditation.xml" value="0.22" />
         <entry key="..\:/Users/Lenovo/AndroidStudioProjects/Project/app/src/main/res/layout/activity_splash_screen.xml" value="0.18" />
         <entry key="..\:/Users/Lenovo/AndroidStudioProjects/Project/app/src/main/res/layout/fragment_advanced.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/Project/app/src/main/res/layout/fragment_beginner.xml" value="0.14" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/Project/app/src/main/res/layout/fragment_beginner.xml" value="0.18" />
         <entry key="..\:/Users/Lenovo/AndroidStudioProjects/Project/app/src/main/res/layout/fragment_intermediate.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Lenovo/AndroidStudioProjects/Project/app/src/main/res/layout/workout_list_item.xml" value="0.20416666666666666" />
       </map>
