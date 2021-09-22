@@ -13,6 +13,11 @@
     <string name="tab_label_1">Beginner</string>
     <string name="tab_label_2">Intermediate</string>
     <string name="tab_label_3">Advanced</string>
+
+    <string name="tab_label_4">Beginner</string>
+    <string name="tab_label_5">Intermediate</string>
+    <string name="tab_label_6">Advanced</string>
+
     <string name="these_workouts_take_15_mins">These workouts take 15 mins</string>
     <string name="day">DAY</string>
     <string name="workout_short_description">Workout Short Description</string>
@@ -50,6 +55,8 @@
         <item>@drawable/day2</item>
 
     </string>
+    <string name="intermediate_workouts">INTERMEDIATE WORKOUTS</string>
+    <string name="advanced_workouts">ADVANCED WORKOUTS</string>
     <string-array name="day">
         <item>Day 1</item>
         <item>Day 2</item>

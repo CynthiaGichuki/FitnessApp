@@ -47,7 +47,7 @@
         android:layout_height="150dp"
         android:layout_below="@+id/gender"
         android:layout_marginStart="50dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="100dp"
         android:background="@color/white"
         android:src="@drawable/male"
 
@@ -60,7 +60,7 @@
         android:layout_height="150dp"
         android:layout_below="@+id/gender"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="100dp"
         android:src="@drawable/female"
         android:background="@color/white"
         android:layout_toRightOf="@+id/male" />
@@ -96,15 +96,7 @@
 
 
 
-    <Button
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="600dp"
-        android:layout_centerHorizontal="true"
-        android:text="@string/next"
-        android:backgroundTint="@color/black"
-        android:textColor="@color/white"
-        android:onClick="btnNext"/>
+
 
 
 

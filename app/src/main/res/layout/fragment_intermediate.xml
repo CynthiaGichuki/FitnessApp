@@ -11,7 +11,7 @@
         android:id="@+id/text_intro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="INTERMEDIATE WORKOUTS"
+        android:text="@string/intermediate_workouts"
         android:layout_marginTop="16dp"
         android:layout_centerHorizontal="true"
         android:textColor="@color/white"

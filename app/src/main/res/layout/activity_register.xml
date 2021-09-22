@@ -5,7 +5,8 @@
     android:id="@+id/registerFullName"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Register">
+    tools:context=".Register"
+    android:background="@color/teal_700">
 
     <EditText
         android:id="@+id/registerconfirmPassword"
@@ -31,7 +32,7 @@
         android:layout_marginEnd="16dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Full Name"
+        android:hint="Full Name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -45,7 +46,7 @@
         android:layout_marginEnd="16dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Email Address"
+        android:hint="Email Address"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.514"
         app:layout_constraintStart_toStartOf="parent"
@@ -74,8 +75,10 @@
         android:layout_marginTop="24dp"
         android:layout_marginEnd="24dp"
         android:text="Register"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        android:backgroundTint="@color/black"
         app:layout_constraintTop_toBottomOf="@+id/registerconfirmPassword" />
 
     <Button
@@ -87,6 +90,8 @@
         android:layout_marginEnd="24dp"
         android:text="Login"
         app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/black"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/registerconfirmPassword" />

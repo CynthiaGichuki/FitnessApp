@@ -35,17 +35,17 @@ public class GenderActivity extends AppCompatActivity {
             case R.id.selectMale:
                 if (checked)
                     Toast.makeText(GenderActivity.this,"Male",Toast.LENGTH_SHORT).show();
+                Intent myIntent = new Intent(GenderActivity.this, MainActivity2.class);
+                startActivity(myIntent);
                     break;
             case R.id.selectFemale:
                 if (checked)
                     Toast.makeText(GenderActivity.this,"Female",Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent (GenderActivity.this, MainActivity.class);
+                startActivity(intent);
                     break;
         }
     }
 
-    public void btnNext(View view) {
-        Intent intent = new Intent(GenderActivity.this, MainActivity.class);
-        startActivity(intent);
 
-    }
 }
