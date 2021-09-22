@@ -8,91 +8,186 @@
     android:background="@color/teal_700">
 
     <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/tool_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@color/basil"
+            android:minHeight="?attr/actionBarSize"
+            app:logo="@mipmap/ic_logo"
+            app:titleMarginStart="80dp"
+            app:title="DYNAMO FITNESS"
+            app:titleTextAppearance="@style/app_title"
+            app:titleTextColor="@color/black"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            />
 
 
-//1
+
     <TextView
         android:id="@+id/jumping_jacks"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
+        android:layout_below="@+id/tool_bar"
         android:text="JUMPING JACKS FOR 1 MINUTE"
         android:textSize="20sp"
         android:layout_marginTop="20dp"
         android:layout_centerHorizontal="true"
-        android:textAppearance="@style/owl"/>
-    <VideoView
-        android:id="@+id/video_view"
-        android:layout_width="match_parent"
+        android:textAppearance="@style/app_title"/>
 
-        android:layout_height="200dp"
-        android:layout_marginTop="50dp"
+        <FrameLayout
+            android:id="@+id/frame1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/jumping_jacks"
+            android:layout_centerHorizontal="true"
+           >
 
-        />
+            <VideoView
+                android:id="@+id/video_view"
+                android:layout_width="match_parent"
+                android:layout_height="229dp"
+                android:layout_marginTop="50dp"
+                android:layout_gravity="center"
+                android:layout_centerInParent="true"
 
 
-        //2
+
+                />
+
+        </FrameLayout>
+
+
+
+
         <TextView
             android:id="@+id/high_stepping"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/video_view"
+            android:layout_below="@+id/frame1"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="20dp"
             android:text="HIGH STEPPING FOR 1 MINUTE"
-            android:textAppearance="@style/owl" />
-    <VideoView
-        android:id="@+id/video_view2"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
+            android:textAppearance="@style/app_title" />
 
-        android:layout_below="@+id/high_stepping"
-        android:layout_marginTop="20dp"
+        <FrameLayout
+            android:id="@+id/frame2"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_below="@+id/high_stepping"
+            android:layout_centerHorizontal="true"
+            >
 
-        />
+            <VideoView
+                android:id="@+id/video_view2"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:layout_centerInParent="true"
 
+                />
 
-        //3
-    <TextView
-        android:id="@+id/crunches"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/video_view2"
-        android:text="CRUNCHES    x10 "
-        android:layout_marginTop="20dp"
-        android:layout_centerHorizontal="true"
-        android:textAppearance="@style/owl"/>
-    <VideoView
-        android:id="@+id/video_view3"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
+        </FrameLayout>
 
-        android:layout_below="@+id/crunches"
-        android:layout_marginTop="20dp"
-
-        />
-
-        //4
         <TextView
             android:id="@+id/plank"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/video_view3"
-            android:text="PLANK FOR 40 SECS"
+            android:layout_below="@+id/frame2"
+            android:text="PLANK FOR 40 SECONDS"
+            android:textSize="20sp"
             android:layout_marginTop="20dp"
             android:layout_centerHorizontal="true"
-            android:textAppearance="@style/owl"/>
-        <VideoView
-            android:id="@+id/video_view4"
+            android:textAppearance="@style/app_title"/>
+
+        <FrameLayout
+            android:id="@+id/frame3"
             android:layout_width="match_parent"
-            android:layout_height="200dp"
-
+            android:layout_height="wrap_content"
             android:layout_below="@+id/plank"
-            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            >
 
-            />
+            <VideoView
+                android:id="@+id/video_view3"
+                android:layout_width="match_parent"
+                android:layout_height="229dp"
+                android:layout_gravity="center"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="50dp"
+
+                />
+
+        </FrameLayout>
+
+
+
+<!--        //3-->
+<!--    <TextView-->
+<!--        android:id="@+id/crunches"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/frame2"-->
+<!--        android:text="CRUNCHES    x10 "-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:textAppearance="@style/owl"/>-->
+
+<!--        <FrameLayout-->
+<!--            android:id="@+id/frame3"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/crunches">-->
+<!--            <VideoView-->
+<!--                android:id="@+id/video_view3"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="200dp"-->
+
+<!--                android:layout_below="@+id/frame3"-->
+<!--                android:layout_marginTop="20dp"-->
+
+<!--                />-->
+
+<!--        </FrameLayout>-->
+
+
+<!--        //4-->
+<!--        <TextView-->
+<!--            android:id="@+id/plank"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/frame3"-->
+<!--            android:text="PLANK FOR 40 SECS"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:textAppearance="@style/owl"/>-->
+
+<!--        <FrameLayout-->
+<!--            android:id="@+id/frame4"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/plank">-->
+
+<!--            <VideoView-->
+<!--                android:id="@+id/video_view4"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="200dp"-->
+
+<!--                android:layout_below="@+id/frame4"-->
+<!--                android:layout_marginTop="20dp"-->
+
+<!--                />-->
+
+<!--        </FrameLayout>-->
+
+
+
 
 
     </RelativeLayout>

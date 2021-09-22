@@ -66,17 +66,83 @@ public class BeginnerFragment extends Fragment {
 
     View view = inflater.inflate(R.layout.fragment_beginner,
             container, false);
+
     ImageButton button = (ImageButton) view.findViewById(R.id.day1_img);
+   ImageButton button1 = (ImageButton) view.findViewById(R.id.day2_img);
+ ImageButton button2 = (ImageButton) view.findViewById(R.id.day3_img);
+        ImageButton button3 = (ImageButton) view.findViewById(R.id.day4_img);
+        ImageButton button4 = (ImageButton) view.findViewById(R.id.day5_img);
+        ImageButton button5 = (ImageButton) view.findViewById(R.id.day6_img);
+        ImageButton button6 = (ImageButton) view.findViewById(R.id.day7_img);
+
    button.setOnClickListener(new View.OnClickListener()
     {
         @Override
         public void onClick(View v)
         {
            Intent intent = new Intent(getActivity(), ExerciseActivity.class);
+//           intent.putExtra("day1_img" ,button);
+//           intent.putExtra()
            startActivity(intent);
         }
     });
+   button1.setOnClickListener(new View.OnClickListener() {
+       @Override
+       public void onClick(View view) {
+           Intent intent = new Intent(getActivity(), ExerciseActivity.class);
+           startActivity(intent);
+
+       }
+   });
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), MeditationActivity.class);
+                startActivity(intent);
+
+            }
+        });
+        button3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), ExerciseActivity.class);
+                startActivity(intent);
+
+            }
+        });
+        button4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), ExerciseActivity.class);
+                startActivity(intent);
+
+            }
+        });
+        button5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), ExerciseActivity.class);
+                startActivity(intent);
+
+            }
+        });
+        button6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), MeditationActivity.class);
+                startActivity(intent);
+
+            }
+        });
+
    return view;
+
+
+
+
 }
+
+
+
 
 }

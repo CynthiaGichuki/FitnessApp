@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MeditationActivity"
+    android:background="@color/teal_700">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/tool_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@color/basil"
+            android:minHeight="?attr/actionBarSize"
+            app:logo="@mipmap/ic_logo"
+            app:titleMarginStart="80dp"
+            app:title="DYNAMO FITNESS"
+            app:titleTextAppearance="@style/app_title"
+            app:titleTextColor="@color/black"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            />
+
+        <TextView
+            android:id="@+id/restDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TODAY IS A REST DAY. SIT BACK AND RELAX WITH SOME OF THESE MEDITATION TECHNIQUES"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:layout_below="@+id/tool_bar"
+           android:textStyle="italic"
+            />
+
+
+    <TextView
+        android:id="@+id/meditation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MEDITATION"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/restDay"
+        android:textAppearance="@style/app_title"/>
+
+    <FrameLayout
+        android:id="@+id/frame1"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/meditation"
+        android:layout_marginStart="50dp">
+
+        <VideoView
+            android:id="@+id/video_view"
+            android:layout_width="match_parent"
+            android:layout_height="229dp"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center"
+            android:layout_centerInParent="true"
+
+            />
+
+    </FrameLayout>
+
+
+
+
+    <TextView
+        android:id="@+id/yoga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/frame1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="YOGA"
+        android:textAppearance="@style/app_title" />
+
+    <FrameLayout
+        android:id="@+id/frame2"
+        android:layout_width="300dp"
+        android:layout_height="220dp"
+        android:layout_below="@+id/yoga"
+        android:layout_marginStart="50dp">
+
+        <VideoView
+            android:id="@+id/video_view2"
+            android:layout_width="251dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:layout_centerInParent="true"
+
+            />
+
+    </FrameLayout>
+    </RelativeLayout>
+
+</ScrollView>
