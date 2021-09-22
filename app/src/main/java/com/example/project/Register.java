@@ -3,6 +3,7 @@ package com.example.project;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -40,6 +41,14 @@ public class Register extends AppCompatActivity {
                 String password=registerPassword.getText().toString();
                 String confpass=registerConfirmPassword.getText().toString();
 
+                loginUserButton.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        startActivity(new Intent(getApplicationContext(),Login.class));
+                        finish();
+                    }
+                });
+
                 if(fullName.isEmpty())
                 {
                     registerFullName.setError("Full Name is Required");
@@ -70,7 +79,8 @@ public class Register extends AppCompatActivity {
                 fAuth.createUserWithEmailAndPassword(email,password).addOnSuccessListener(new OnSuccessListener<AuthResult>() {
                     @Override
                     public void onSuccess(AuthResult authResult) {
-
+                        startActivity(new Intent(getApplicationContext(),MainActivity.class));
+                        finish();
                     }
                 }).addOnFailureListener(new OnFailureListener() {
                     @Override
