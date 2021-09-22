@@ -34,28 +34,38 @@ public class ExerciseActivity extends AppCompatActivity {
         videoView2.setMediaController(mediaController2);
         mediaController2.setAnchorView(videoView2);
 
-
-
         VideoView videoView3 = findViewById(R.id.video_view3);
-        String videoPath3 = "android.resource://" + getPackageName() + "/" + R.raw.video3;
+        String videoPath3 = "android.resource://" + getPackageName() + "/" + R.raw.plank;
         Uri uri3 = Uri.parse(videoPath3);
         videoView3.setVideoURI(uri3);
-        videoView3.seekTo(1);
+        videoView3.seekTo(4);
 
         MediaController mediaController3 = new MediaController(this);
         videoView3.setMediaController(mediaController3);
         mediaController3.setAnchorView(videoView3);
 
 
-        VideoView videoView4 = findViewById(R.id.video_view4);
-        String videoPath4 = "android.resource://" + getPackageName() + "/" + R.raw.plank;
-        Uri uri4 = Uri.parse(videoPath4);
-        videoView4.setVideoURI(uri4);
-        videoView4.seekTo(1);
 
-        MediaController mediaController4 = new MediaController(this);
-        videoView4.setMediaController(mediaController4);
-        mediaController4.setAnchorView(videoView4);
+//        VideoView videoView3 = findViewById(R.id.video_view3);
+//        String videoPath3 = "android.resource://" + getPackageName() + "/" + R.raw.video3;
+//        Uri uri3 = Uri.parse(videoPath3);
+//        videoView3.setVideoURI(uri3);
+//        videoView3.seekTo(1);
+//
+//        MediaController mediaController3 = new MediaController(this);
+//        videoView3.setMediaController(mediaController3);
+//        mediaController3.setAnchorView(videoView3);
+//
+//
+//        VideoView videoView4 = findViewById(R.id.video_view4);
+//        String videoPath4 = "android.resource://" + getPackageName() + "/" + R.raw.plank;
+//        Uri uri4 = Uri.parse(videoPath4);
+//        videoView4.setVideoURI(uri4);
+//        videoView4.seekTo(1);
+//
+//        MediaController mediaController4 = new MediaController(this);
+//        videoView4.setMediaController(mediaController4);
+//        mediaController4.setAnchorView(videoView4);
 
     }
 }

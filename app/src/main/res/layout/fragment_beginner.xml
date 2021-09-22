@@ -34,13 +34,13 @@
         android:textSize="16sp"
         android:layout_below="@id/text_intro"
         android:layout_centerHorizontal="true"/>
-    //DAY1
+
     <TextView
         android:id="@+id/day1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/beginner_workouts"
-        android:text="DAY 1"
+        android:text="DAY 1: MONDAY"
         android:layout_marginTop="20dp"
         android:layout_centerHorizontal="true"
         android:textAppearance="@style/app_title"/>
@@ -53,92 +53,106 @@
             android:onClick="day1"
             android:background="@color/teal_700"
             android:src="@drawable/day1" />
-    //DAY2
+
     <TextView
         android:id="@+id/day2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/day1_img"
-        android:text="DAY 2"
+        android:text="DAY 2: TUESDAY"
         android:layout_marginTop="20dp"
         android:layout_centerHorizontal="true"
         android:textAppearance="@style/app_title"/>
 
-        <ImageView
+
+        <ImageButton
             android:id="@+id/day2_img"
             android:layout_width="300dp"
             android:layout_height="300dp"
             android:layout_below="@id/day2"
             android:layout_marginStart="60dp"
-            android:src="@drawable/day2" />
-    //DAY3
+            android:onClick="day1"
+            android:backgroundTint="@color/teal_700"
+            android:src="@drawable/day4" />
+
+
     <TextView
         android:id="@+id/day3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/day2_img"
-        android:text="DAY 3"
+        android:text="DAY 3: WEDNESDAY"
         android:layout_centerHorizontal="true"
         android:textAppearance="@style/app_title"/>
-    <ImageView
-        android:id="@+id/day3_img"
-        android:layout_width="300dp"
-        android:layout_marginStart="60dp"
-        android:layout_height="300dp"
-        android:src="@drawable/day3"
-        android:layout_below="@id/day3"/>
 
-        //DAY4
+
+        <ImageButton
+            android:id="@+id/day3_img"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_below="@id/day3"
+            android:layout_marginStart="60dp"
+            android:backgroundTint="@color/teal_700"
+            android:onClick="day1"
+            android:src="@drawable/day5" />
+
         <TextView
             android:id="@+id/day4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/day3_img"
-            android:text="DAY 4"
+            android:text="DAY 4: THURSDAY"
             android:layout_centerHorizontal="true"
             android:textAppearance="@style/app_title"/>
-        <ImageView
-            android:id="@+id/day4_img"
-            android:layout_width="match_parent"
-            android:layout_height="400dp"
-            android:src="@drawable/day4"
-            android:layout_below="@id/day4"/>
 
-        //DAY5
+        <ImageButton
+            android:id="@+id/day4_img"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_below="@id/day4"
+            android:backgroundTint="@color/teal_700"
+            android:layout_marginStart="60dp"
+            android:onClick="day1"
+            android:src="@drawable/day6" />
+
+
 
         <TextView
             android:id="@+id/day5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/day4_img"
-            android:text="DAY 5"
-            android:layout_marginTop="20dp"
+            android:text="DAY 5: FRIDAY"
             android:layout_centerHorizontal="true"
             android:textAppearance="@style/app_title"/>
-        <ImageView
+
+        <ImageButton
+            android:backgroundTint="@color/teal_700"
             android:id="@+id/day5_img"
             android:layout_width="300dp"
             android:layout_height="300dp"
             android:layout_marginStart="60dp"
-            android:src="@drawable/day5"
+            android:onClick="day1"
+            android:src="@drawable/day7"
             android:layout_below="@id/day5"/>
 
-        //DAY 6
+
         <TextView
             android:id="@+id/day6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/day5_img"
-            android:text="DAY 6"
-
+            android:text="DAY 6: SATURDAY"
             android:layout_centerHorizontal="true"
             android:textAppearance="@style/app_title"/>
-        <ImageView
+        <ImageButton
             android:id="@+id/day6_img"
             android:layout_width="300dp"
-            android:layout_height="200dp"
+            android:layout_height="300dp"
             android:layout_marginStart="60dp"
-            android:src="@drawable/day6"
+            android:src="@drawable/day9"
+            android:onClick="day1"
+            android:backgroundTint="@color/teal_700"
             android:layout_below="@id/day6"/>
         //DAY7
         <TextView
@@ -146,24 +160,21 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/day6_img"
-            android:text="DAY 7"
-
+            android:text="DAY 7: SUNDAY"
             android:layout_centerHorizontal="true"
             android:textAppearance="@style/app_title"/>
-        <ImageView
+
+        <ImageButton
             android:id="@+id/day7_img"
             android:layout_width="300dp"
-            android:layout_height="400dp"
+            android:layout_height="300dp"
             android:layout_marginStart="60dp"
-            android:src="@drawable/day7"
+            android:src="@drawable/day1"
+            android:backgroundTint="@color/teal_700"
+            android:onClick="day1"
             android:layout_below="@id/day7"/>
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recycler_beginner"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@id/day7_img"
-        />
+
     </RelativeLayout>
 
 </ScrollView>
